@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>top page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+    <form method="post">
+        <p>task: </p><input type="text" name="task">
+        <input type="submit" value="送信">
+    </form>
+
+    <p>task list:</p>
+    <p th:text="${task}">
+</body>
+
+</html>
